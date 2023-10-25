@@ -14,8 +14,8 @@
          
          body {
              font-family: 'grenoble-serial-bold', sans-serif;
-             margin-left: 20%;
-             margin-right: 20%;
+             margin-left: 10%;
+             margin-right: 10%;
              background-color: white;
          }
          
@@ -94,18 +94,24 @@
          }
 
          #about {
-            display: flex;
+            display: inline-flex;
             justify-content: space-between;
             align-items: center;
-            text-align: center;
+            text-align: left;
             padding: 64px 50px 0 50px;
+         }
+
+         #about div {
+            margin-left: 60px;
+
          }
 
          #about h1 {
             font-family: 'Antique Cable', sans-serif;
             font-weight: 100;
-
             font-size: 80px;
+            text-align: center;
+
          }
          #about p {
             font-size: 30px;
@@ -118,7 +124,6 @@
             display: flex;
             flex-direction: column;
             padding-top: 64px;
-            position: relative;
          }
          #food h1 {
             font-family: 'Antique Cable', sans-serif;
@@ -140,9 +145,10 @@
 
          #contact {
             display: flex;
-            justify-content: space-between;
             padding-top: 64px;
             padding-bottom: 32px;
+            justify-content: space-between;
+            align-items: center;
 
          }
 
@@ -153,16 +159,20 @@
          }
 
          #contact div {
-            width: 50%;
+            width: 44%;
             
          }
 
          #contact h2 {
-            font-weight: normal;
+            font-family: 'Antique Cable', sans-serif;
+            font-weight: 100;
+            font-size: 80px;
+            text-align: center;
          }
 
          #contact img {
-            width: 40%;
+            width: 50%;
+            height: 50%;
          }
          
          a {
@@ -175,6 +185,11 @@
              color: black;
              padding-top: 64px;
             padding-bottom: 32px;
+         }
+
+         @media screen and (max-width: 798px) {
+
+            
          }
          
     </style>
@@ -204,14 +219,19 @@
         </div>
         <img src="tinto-3-2-2.jpg"/>
     </section>
+
     <section id="about">
         <img src="Screenshot 2023-10-25 at 15.18.02.png"/>
         <div>
         <h1>A propos</h1>
         <p>Tinto all day est un coffee-cantine qui se spécialise dans la cuisine franco-colombienne :
+            <br>
+            <br>
 
-            Bon café de spécialité (Azerja Torréfaction & guests) et autres boissons maison, bonne cuisine réalisée à partir de produits locaux, de saison, et inspirée de la Colombie, bonne musique et service chaleureux! 
-            
+            Bon café de spécialité (Azerja Torréfaction & guests) et autres boissons maison, bonne cuisine réalisée à partir de produits locaux, de saison, et inspirée de la Colombie, bonne musique et service chaleureux ! 
+            <br>
+            <br>
+
             Nous servons les petits déjeuners et les déjeuners de 9h30 à 15h (à partir de 10h30 le week-end) et nous proposons aussi une offre sucrée (tout maison !) jusqu’à 17h. Le tout sur place ou à emporter.
             </p>
         </div>
@@ -235,10 +255,9 @@
         <div>
         <h2>
             Contact
-            <br>
-            <br>
-
-            LOCALISATION 
+        </h2>
+        <p>
+            <h3>LOCALISATION</h3> 
             <br>
 
             163 AVENUE DE L’ADOUR 
@@ -256,7 +275,7 @@
             Piste cyclable face au restaurant et parking à vélo 
             <br>
             <br>
-            HORAIRES
+            <h3>HORAIRES</h3>
             <br>
 
             Lundi : 9h-17h
@@ -272,7 +291,7 @@
             <br>
 
             
-            PAS DE RESERVATION 
+            <h3>PAS DE RESERVATION</h3> 
             <br>
 
             Nous ne prenons pas les réservations, sauf pour les tables de minimum 6 personnes. 
@@ -284,10 +303,10 @@
             Pour tout renseignement supplémentaire :
             <br>
 
-            Tinto.all.day@gmail.com
+            <a href="mailto: Tinto.all.day@gmail.com">Tinto.all.day@gmail.com</a> 
             <br>
 
-            07.49.64.89.23</h2>
+            07.49.64.89.23</p>
         </div>
     </section>
 
