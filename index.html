@@ -125,7 +125,7 @@
          }
          #about img {
             width: 50%;
-            height: 50%;
+            height: auto;
          }
 
          #food {
@@ -221,7 +221,7 @@
 
          #contact img {
             width: 50%;
-            height: 50%;
+            height: auto;
          }
          
          a {
@@ -269,6 +269,14 @@
                 font-size: 50px;
             }
 
+            #about {
+                flex-direction: column-reverse;
+            }
+
+            #about img {
+                width: 80%;
+            }
+
             #carte {
                 display: flex;
                 justify-content: center;
@@ -306,18 +314,31 @@
                 flex-direction: column;
                 margin-left: 10%;
                 margin-right: 10%;
+                padding-top: 160px;
             }
             #bienvenidos h1 {
                 font-size: 40px;
             }
 
             #bienvenidos div {
+                display: flex;
+                flex-direction: column;
                 margin-right: 0;
+                text-align: center;
+                justify-content: center;
+            }
+            #stella {
+                width: 120%;
+                margin-top: 24px;
+            }
 
+            #rico {
+                margin-left: 24px;
             }
 
             #about {
-                flex-direction: column-reverse;
+                text-align: center;
+                padding-top: 0;
             }
             #about div {
             margin-left: 0;
@@ -326,14 +347,31 @@
             width: 100%;
             height: 100%;
             }
-
+            #food {
+                justify-content: center;
+            }
             #food h1{
                 display: flex;
                 justify-content: center;
             }
+            #foodcontainer {
+                flex-direction: column;
+                align-items: normal;
+                margin: 0;
+            }
+            #foodtitre img {
+                width: 40%;
+            }
+            .fooddiv:nth-of-type(2) {
+                display: flex;
+                flex-direction: column-reverse;
+                padding-bottom: 0;
+            }
+
             #shop {
                 display: flex;
                 flex-direction: column;
+                padding-top: 22px;
             }
            
             #shop h1 {
@@ -345,6 +383,9 @@
                 justify-content: center;
             }
             #contact div {
+                width: 100%;
+            }
+            #contact img {
                 width: 100%;
             }
 
