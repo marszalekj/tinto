@@ -81,7 +81,7 @@
          }
 
          #stella {
-            width: 60%;
+            width: 90%;
             height: auto;
          }
 
@@ -124,14 +124,18 @@
             font-size: 30px;
          }
          #about img {
+            border-radius: 20px;
             width: 50%;
             height: auto;
+         }
+         #about div {
+            width: 60%;
          }
 
          #food {
             display: flex;
             flex-direction: column;
-            padding-top: 80px;
+            padding-top: 88px;
          }
          #food h1 {
             font-family: 'Antique Cable', sans-serif;
@@ -269,12 +273,49 @@
                 font-size: 50px;
             }
 
+            #stella {
+            width: 50%;
+         }
+
             #about {
                 flex-direction: column-reverse;
+            }
+            #about div {
+                width: 100%;
             }
 
             #about img {
                 width: 80%;
+            }
+
+            #food {
+                justify-content: center;
+            }
+            #food h1{
+                display: flex;
+                justify-content: center;
+            }
+            #foodcontainer {
+                flex-direction: column;
+                align-items: normal;
+                margin: 0;
+            }
+            .fooddiv {
+                margin-bottom: 12px;
+            }
+            .fooddiv img {
+                border-radius: 0;
+            }
+
+            #foodtitre img {
+                width: 40%;
+            }
+            .fooddiv:nth-of-type(2) {
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 0;
             }
 
             #carte {
@@ -347,33 +388,7 @@
             width: 100%;
             height: 100%;
             }
-            #food {
-                justify-content: center;
-            }
-            #food h1{
-                display: flex;
-                justify-content: center;
-            }
-            #foodcontainer {
-                flex-direction: column;
-                align-items: normal;
-                margin: 0;
-            }
-            .fooddiv {
-                margin-bottom: 12px;
-            }
-            .fooddiv img {
-                border-radius: 0;
-            }
 
-            #foodtitre img {
-                width: 40%;
-            }
-            .fooddiv:nth-of-type(2) {
-                display: flex;
-                flex-direction: column-reverse;
-                padding-bottom: 0;
-            }
 
             #shop {
                 display: flex;
