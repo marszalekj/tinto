@@ -36,10 +36,11 @@
          #navbar {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             font-family: 'Antique Cable', sans-serif;
             font-size: 48px;
              position: fixed;
-             height: 150px;
+             height: 250px;
              top: 0;
              left: 0;
              right: 0;
@@ -63,6 +64,8 @@
          }
 
          .logotinto {
+            width:460px;
+            height: auto;
         }
 
         .dropdown {
@@ -83,7 +86,6 @@
          #stella {
             width: 90%;
             height: auto;
-            border-radius: 20%;
          }
 
          #bienvenidos h1 {
@@ -125,7 +127,6 @@
             font-size: 30px;
          }
          #about img {
-            border-radius: 20px;
             width: 50%;
             height: auto;
          }
@@ -163,7 +164,6 @@
             font-weight: 100;
 
             font-size: 60px;
-            margin-top: -160px;
             margin-bottom: 120px;
          }
 
@@ -178,7 +178,6 @@
          .fooddiv img {
             width: 360px;
             height: auto;
-            border-radius: 3%;
          }
          .fooddiv p {
             margin: 10px;
@@ -246,20 +245,18 @@
 
             #navbar {
                 flex-direction: column;
-                justify-content:baseline;
                 height: 230px;
             }
 
             #navbar ul {
-                justify-content: center;
+                margin-right: 0;
+                margin-top: 2px;
             gap: 0;
-            margin-top: -2px;
             }
 
             .logotinto {
-            width: 220px;
-            height: 220px;
-            margin-left: 40%;
+            width: 320px;
+            height: 320px;
             }
 
             #bienvenidos {
@@ -306,9 +303,7 @@
                 margin-bottom: 12px;
                 width: inherit;
             }
-            .fooddiv img {
-                border-radius: 0;
-            }
+            
 
             #foodtitre img {
                 width: 40%;
@@ -339,26 +334,76 @@
 
             #navbar {
                 flex-direction:row;
-                justify-content:center;
+                justify-content:space-around;
                 align-items: center;
                 font-size: 30px;
-                height: 180px;
+                height: 140px;
             }
             #navbar ul {
-                flex-direction: column;
-            }
+display: none;            }
 
             .logotinto {
                 margin-left: 0;
-                width: 44%;
+                width: 60%;
                 height: auto;
             }
+
+            /* Style The Dropdown Button */
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-family: 'Antique Cable', sans-serif;
+
+  font-size: 26px;
+  border-color: black;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0;
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
 
             #bienvenidos {
                 flex-direction: column;
                 margin-left: 10%;
                 margin-right: 10%;
-                padding-top: 160px;
+                padding-top: 120px;
             }
             #bienvenidos h1 {
                 font-size: 40px;
@@ -430,9 +475,17 @@
                 <li><a href="#food">Food</a></li>
                 <li><a href="#shop">Shop: la tiendita</a></li>
                 <li><a href="#contact">Contact</a></li>
-
-
             </ul>
+            <div class="dropdown">
+                <button class="dropbtn">Menu</button>
+                <div class="dropdown-content">
+                  <a href="#bienvenidos">Bienvenidos</a>
+                  <a href="#about">A propos</a>
+                  <a href="#food">Food</a>
+                  <a href="#shop">Shop: la tiendita</a>
+                  <a href="#contact">Contact</a>
+                </div>
+            </div>
         </nav>
     </header>
 <div>
@@ -454,7 +507,7 @@
             <br>
             <br>
 
-            Bon café de spécialité (Azerja Torréfaction & guests) et autres boissons maison, bonne cuisine réalisée à partir de produits locaux, de saison, et inspirée de la Colombie, bonne musique et service chaleureux ! 
+            Bon café de spécialité (Azéria Torréfaction & guests) et autres boissons maison, bonne cuisine réalisée à partir de produits locaux, de saison, et inspirée de la Colombie, bonne musique et service chaleureux ! 
             <br>
             <br>
 
@@ -523,8 +576,8 @@
             <br>
             <br>
             <div id="carte">
-            <iframe class="cartegrande" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.2750732534987!2d-1.504375023770418!3d43.51745627110891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5141570cee5591%3A0x7ed75a1f739ac6c3!2sTINTO%20ALL%20DAY%20-%20Caf%C3%A9%20cantine!5e0!3m2!1sfr!2ses!4v1698230378771!5m2!1sfr!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <iframe class="cartepetite" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.2748867264636!2d-1.504375023609374!3d43.51746016119928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5141570cee5591%3A0x7ed75a1f739ac6c3!2sTINTO%20ALL%20DAY%20-%20Caf%C3%A9%20cantine!5e0!3m2!1sfr!2ses!4v1698320156228!5m2!1sfr!2ses" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="cartegrande" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.2750732534987!2d-1.504375023770418!3d43.51745627110891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5141570cee5591%3A0x7ed75a1f739ac6c3!2sTINTO%20ALL%20DAY%20-%20Caf%C3%A9%20cantine!5e0!3m2!1sfr!2ses!4v1698230378771!5m2!1sfr!2ses" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="cartepetite" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.2748867264636!2d-1.504375023609374!3d43.51746016119928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5141570cee5591%3A0x7ed75a1f739ac6c3!2sTINTO%20ALL%20DAY%20-%20Caf%C3%A9%20cantine!5e0!3m2!1sfr!2ses!4v1698320156228!5m2!1sfr!2ses" width="80%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <br>
             <h3>HORAIRES</h3>
