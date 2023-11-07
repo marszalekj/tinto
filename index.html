@@ -40,13 +40,19 @@
             font-family: 'Antique Cable', sans-serif;
             font-size: 48px;
              position: fixed;
-             height: 250px;
+             height: 160px;
              top: 0;
              left: 0;
              right: 0;
              color: black;
              background-color: white;
              z-index: 1000;
+         }
+
+         @media screen and (max-width: 1256px) {
+            #navbar {
+                font-size: 40px;
+            }
          }
          
          #navbar ul {
@@ -64,7 +70,7 @@
          }
 
          .logotinto {
-            width:460px;
+            width:260px;
             height: auto;
         }
 
@@ -259,6 +265,12 @@
             height: 320px;
             }
 
+            @media screen and (max-width: 782px) {
+            .logotinto {
+                width: 270px;
+            }
+            }
+
             #bienvenidos {
                 padding-top: 260px;
             }
@@ -329,7 +341,7 @@
             }
 }
 
-         @media screen and (max-width: 798px) {
+         @media screen and (max-width: 644px) {
 
 
             #navbar {
@@ -337,27 +349,32 @@
                 justify-content:space-around;
                 align-items: center;
                 font-size: 30px;
-                height: 140px;
+                height: 120px;
             }
             #navbar ul {
 display: none;            }
 
             .logotinto {
                 margin-left: 0;
-                width: 60%;
+                width: 200px;
                 height: auto;
             }
 
             /* Style The Dropdown Button */
 .dropbtn {
+    display: flex;
   background-color: white;
   color: black;
-  padding: 16px;
+  padding: 4px;
   font-family: 'Antique Cable', sans-serif;
 
-  font-size: 26px;
   border-color: black;
   cursor: pointer;
+}
+
+.menuimg {
+    width: 64px;
+    height: 16px;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -477,7 +494,9 @@ display: none;            }
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="dropdown">
-                <button class="dropbtn">Menu</button>
+                <button class="dropbtn">
+                    <img class="menuimg" src="menu-svgrepo-com.svg"/>
+                </button>
                 <div class="dropdown-content">
                   <a href="#bienvenidos">Bienvenidos</a>
                   <a href="#about">A propos</a>
