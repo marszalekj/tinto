@@ -488,14 +488,38 @@ display: none;            }
     
     </style>
 <script>
-
-    // Close dropdown if user clicks outside it
-    window.onclick = function(event) {
-        if (!event.target.closest('dropdown') && event.target.id != 'dropdown') {
-            document.getElementsByClassName('dropdown').style.display = 'none';
+    document.addEventListener("DOMContentLoaded", function() {
+      var dropdown = document.getElementById("myDropdown");
+  
+      // Fermer le dropdown lors du clic sur un lien à l'intérieur du dropdown
+      var dropdownLinks = dropdown.getElementsByClassName("dropdown-content")[0].getElementsByTagName("a");
+      for (var i = 0; i < dropdownLinks.length; i++) {
+        dropdownLinks[i].addEventListener("click", function() {
+          dropdown.getElementsByClassName("dropdown-content")[0].style.display = "none";
+        });
+      }
+  
+      // Fermer le dropdown lors du clic en dehors du dropdown
+      window.addEventListener("click", function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdownContent = dropdown.getElementsByClassName("dropdown-content")[0];
+          if (dropdownContent.style.display === 'block') {
+            dropdownContent.style.display = 'none';
+          }
         }
-    };
-</script>
+      });
+  
+      // Afficher/cacher le dropdown lors du clic sur le bouton
+      dropdown.getElementsByClassName("dropbtn")[0].addEventListener("click", function() {
+        var dropdownContent = dropdown.getElementsByClassName("dropdown-content")[0];
+        if (dropdownContent.style.display === 'block') {
+          dropdownContent.style.display = 'none';
+        } else {
+          dropdownContent.style.display = 'block';
+        }
+      });
+    });
+  </script>
 
     <header>
         <nav id="navbar">
@@ -507,7 +531,7 @@ display: none;            }
                 <li><a href="#shop">Shop: la tiendita</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="dropdown">
+            <div class="dropdown" id="myDropdown">
                 <button class="dropbtn">
                     <img class="menuimg" src="menu-svgrepo-com.svg" alt="menu"/>
                 </button>
