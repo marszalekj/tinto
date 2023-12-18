@@ -495,7 +495,7 @@ display: none;            }
       var dropdownLinks = dropdown.getElementsByClassName("dropdown-content")[0].getElementsByTagName("a");
       for (var i = 0; i < dropdownLinks.length; i++) {
         dropdownLinks[i].addEventListener("click", function() {
-          dropdown.getElementsByClassName("dropdown-content")[0].style.display = "none";
+          dropdown.getElementsByClassName("dropdown-content").style.display = "none";
         });
       }
   
