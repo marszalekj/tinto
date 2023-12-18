@@ -484,8 +484,18 @@ display: none;            }
             
          }
          
-    </style>
 
+    
+    </style>
+<script>
+
+    // Close dropdown if user clicks outside it
+    window.onclick = function(event) {
+        if (!event.target.closest('dropdown') && event.target.id != 'dropdown') {
+            document.getElementsByClassName('dropdown').style.display = 'none';
+        }
+    };
+</script>
 
     <header>
         <nav id="navbar">
