@@ -492,7 +492,7 @@ display: none;            }
       var dropdown = document.getElementById("myDropdown");
   
       // Fermer le dropdown lors du clic sur un lien à l'intérieur du dropdown
-      var dropdownLinks = dropdown.getElementsByClassName("dropdown-content")[0].getElementsByTagName("a");
+      var dropdownLinks = dropdown.getElementsByClassName("dropdown-content").getElementsByTagName("a");
       for (var i = 0; i < dropdownLinks.length; i++) {
         dropdownLinks[i].addEventListener("click", function() {
           dropdown.getElementsByClassName("dropdown-content").style.display = "none";
